@@ -4,6 +4,6 @@
 
 <div class="md:mx-2 my-3 mx-auto shrink">
 	<a href={url}>
-		<img src={logo} width="300" height="900" alt={alt} />
+		<img src={logo}  alt={alt} class="max-h-64"/>
 	</a>
 </div>
