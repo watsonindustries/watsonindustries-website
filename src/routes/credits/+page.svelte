@@ -10,11 +10,13 @@
     <h1 class= "text-5xl text-accent py-4">Credits</h1>
 
     <h2 class="text-3xl text-accent font-bold py-4">
-        Logos
+        Imagery
     </h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-4 text-primary">
         <CreditCard name="Totangotan" credit="Uber Sheep logo" url="https://twitter.com/totangtotan/status/1319319188129808385" buttonText="Twitter"></CreditCard>
         <CreditCard name="Spiritsnare & Takanashi Kiara" credit="KFP Logo" url="https://twitter.com/takanashikiara/status/1393734168559898624" buttonText="Twitter"></CreditCard>
+        <CreditCard name="Walfie" credit="Smol Ame art" url="https://twitter.com/walfieee/timelines/621818256383442944" buttonText="Twitter"></CreditCard>
+        <CreditCard name="Priichu" credit="3D Ame art" url="https://sketchfab.com/priichu" buttonText="Sketchfab"></CreditCard>
     </div>
 
     <h2 class="text-3xl text-accent font-bold py-4">
@@ -25,7 +27,8 @@
         <CreditCard name="DaniruKun" credit="Development, DevOps, Design, Content" url="https://twitter.com/DaniruKun" buttonText="Twitter"></CreditCard>
         <CreditCard name="VT" credit="Research and Content Sourcing" url="https://twitter.com/vtgare" buttonText="Twitter"></CreditCard>
         <CreditCard name="Kazzy" credit="Rails RnD" url="https://twitter.com/KazumiAchimuro" buttonText="Twitter"></CreditCard>
+        <CreditCard name="PlanetCobalt" credit="Minecraft worlds" url="https://www.planetcobalt.net/sdb/hololive_minecraft_world_v4.shtml" buttonText="Website"></CreditCard>
         <CreditCard name="ChatGPT by OpenAI" credit="Parts of text content" url="https://openai.com/blog/chatgpt"></CreditCard>
     </div>
-    
+
 </div>
