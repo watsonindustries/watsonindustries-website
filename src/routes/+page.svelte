@@ -44,7 +44,7 @@
 				<p class="py-6">We would be nothing without our amazing partners, who supply us with nutrition and energy to keep pounding those grounds.</p>
 			</div>
       
-			<div class="flex md:flex-row flex-col">
+			<div class="flex md:flex-row flex-col sm:space-x-6 xs:space-y-7">
 				<PartnerLogo url="https://youtu.be/wSmNK842gs8?t=961" logo={takoEatsLogo} alt="Tako Eats logo" />
 				<PartnerLogo url="https://uber-sheep.com" alt="Uber Sheep logo by totangtotan" logo={uberSheepLogo} />
 				<PartnerLogo url="https://vivalakiara.com" alt="KFP logo with black background" logo={kfpLogo} />
