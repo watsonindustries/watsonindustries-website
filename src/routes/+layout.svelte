@@ -18,8 +18,9 @@
       </label>
       <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
         <li><a href="/">Homepage</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="/rail">Rail</a></li>
         <li><a href="/ametaverse">Ametaverse</a></li>
+        <li><a href="/about">About</a></li>
       </ul>
     </div>
   </div>
