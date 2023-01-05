@@ -12,11 +12,12 @@
     <h2 class="text-3xl text-accent font-bold py-4">
         Imagery
     </h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-4 text-primary">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-4 text-primary">
         <CreditCard name="Totangotan" credit="Uber Sheep logo" url="https://twitter.com/totangtotan/status/1319319188129808385" buttonText="Twitter"></CreditCard>
         <CreditCard name="Spiritsnare & Takanashi Kiara" credit="KFP Logo" url="https://twitter.com/takanashikiara/status/1393734168559898624" buttonText="Twitter"></CreditCard>
         <CreditCard name="Walfie" credit="Smol Ame art" url="https://twitter.com/walfieee/timelines/621818256383442944" buttonText="Twitter"></CreditCard>
         <CreditCard name="Priichu" credit="3D Ame art" url="https://sketchfab.com/priichu" buttonText="Sketchfab"></CreditCard>
+        <CreditCard name="Irasutoya" credit="Images" url="https://www.irasutoya.com/" buttonText="Website"></CreditCard>
     </div>
 
     <h2 class="text-3xl text-accent font-bold py-4">

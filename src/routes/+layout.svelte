@@ -47,15 +47,15 @@
       <span class="footer-title">Services</span> 
       <a class="link link-hover" href="/rail" >Rail</a>
       <a class="link link-hover" href="/ametaverse" >Ametaverse</a>
-      <a class="link link-hover" href="/construction" >Construction</a>
-      <a class="link link-hover" href="/nfat" >NFATs</a>
-      <a class="link link-hover" href="/ai" >AI</a>
+      <!-- <a class="link link-hover" href="/construction" >Construction</a> -->
+      <!-- <a class="link link-hover" href="/nfat" >NFATs</a> -->
+      <!-- <a class="link link-hover" href="/ai" >AI</a> -->
       <a class="link link-hover" href="/apps" >Apps</a>
     </div> 
     <div>
       <span class="footer-title">Company</span> 
       <a class="link link-hover" href="/about" >About us</a>
-      <a class="link link-hover" href="/contact" >Contact</a>
+      <!-- <a class="link link-hover" href="/contact" >Contact</a> -->
       <a class="link link-hover" href="/credits" >Credits</a>
     </div> 
     <div>
