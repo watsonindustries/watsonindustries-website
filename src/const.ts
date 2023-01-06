@@ -1,0 +1,1 @@
+export const watsonIndustriesGithubURL = "https://github.com/watsonindustries";
