@@ -31,7 +31,7 @@
 
 <div class="hero bg-accent py-20">
   <div class="hero-content flex-col lg:flex-row">
-    <img src={amechibi} width="783" height="1280" class="max-w-screen md:max-w-sm rounded-lg shadow-2xl hover:scale-105 transform transition bg-primary p-9" alt="Watson Railways logo" />
+    <img src={amechibi} width="783" class="max-w-screen sm:max-w-xs md:max-w-sm rounded-lg shadow-2xl hover:scale-105 transform transition bg-primary p-9" alt="Watson Railways logo" />
     <div class="text-primary px-5">
       <h1 class="text-5xl font-bold font-norwester">Watson Railways</h1>
       <p class="py-6 text-lg">Experience the future of transportation with Watson Railways, a subsidiary of Watson Industries. With cutting-edge technology and a dedication to safety and efficiency, we are revolutionizing the way we travel by rail.</p>
