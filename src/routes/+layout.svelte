@@ -2,6 +2,8 @@
     import type { LayoutData } from './$types';
     import "../app.css";
 
+    import {ameDokoURL,watsonIndustriesGithubURL} from '../const';
+
     import { Github, Twitter } from '@steeze-ui/simple-icons'
     import { Icon } from '@steeze-ui/svelte-icon'
 
@@ -20,6 +22,7 @@
         <li><a href="/">Homepage</a></li>
         <li><a href="/rail">Rail</a></li>
         <li><a href="/ametaverse">Ametaverse</a></li>
+        <li><a href={ameDokoURL}>AmeDoko App</a></li>
         <li><a href="/about">About</a></li>
       </ul>
     </div>
@@ -50,11 +53,11 @@
       <!-- <a class="link link-hover" href="/construction" >Construction</a> -->
       <!-- <a class="link link-hover" href="/nfat" >NFATs</a> -->
       <!-- <a class="link link-hover" href="/ai" >AI</a> -->
-      <a class="link link-hover" href="/apps" >Apps</a>
+      <a class="link link-hover" href={watsonIndustriesGithubURL} >Apps</a>
     </div> 
     <div>
       <span class="footer-title">Company</span> 
-      <a class="link link-hover" href="/about" >About us</a>
+      <a class="link link-hover" href="/about" >About</a>
       <!-- <a class="link link-hover" href="/contact" >Contact</a> -->
       <a class="link link-hover" href="/credits" >Credits</a>
     </div> 

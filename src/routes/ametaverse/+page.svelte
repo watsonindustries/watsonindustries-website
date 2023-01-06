@@ -23,7 +23,7 @@
     <h3 class="text-center text-3xl font-bold font-norwester pb-4 mb-4">Smolverse</h3>
 
     <a href={smolVerseURL}>
-        <img src={smolVerse} alt="Smolverse Preview" class="shadow-md mx-auto hover:scale-110 transition transform" />
+        <img src={smolVerse} alt="Smolverse Preview" class="shadow-md mx-auto hover:scale-105 transition transform" />
     </a>
 
     <div class="mx-auto text-center">
