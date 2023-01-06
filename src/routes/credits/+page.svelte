@@ -8,17 +8,23 @@
         {name: 'Spiritsnare & Takanashi Kiara', credit: 'KFP Logo', url: 'https://twitter.com/takanashikiara/status/1393734168559898624', buttonText: 'Twitter'},
         {name: 'Walfie', credit: 'Smol Ame art', url: 'https://twitter.com/walfieee/timelines/621818256383442944', buttonText: 'Twitter'},
         {name: 'Priichu', credit: '3D Ame art', url: 'https://sketchfab.com/priichu', buttonText: 'Sketchfab'},
+        {name: 'Deyuix', credit: 'Ame railcart chibi art', url: 'https://deyui-art.tumblr.com', buttonText: 'Website'},
         {name: 'Irasutoya', credit: 'Images', url: 'https://www.irasutoya.com/', buttonText: 'Website'}
     ]
 
     const qaCredits = [
         {name: 'Dominik K', credit: 'Testing and feedback', url: 'https://twitter.com/Dominik_KFBeats', buttonText: 'Twitter'},
         {name: 'Moondog', credit: 'Assistance and testing', url: 'https://twitter.com/Moondog_94', buttonText: 'Twitter'},
-        {name: 'PONG', credit: 'Testing and feedback', url: '', buttonText: ''}
+        {name: 'PONG', credit: 'Testing and feedback', url: '', buttonText: ''},
+        {name: 'Rest of KFP Office', credit: 'Testing and feedback', url: 'https://vivalakiara.com/', buttonText: 'Website'}
     ]
     
     export let data: PageData;
 </script>
+
+<svelte:head>
+  <title>Watson Industries - Credits</title>
+</svelte:head>
 
 <div class="text-center mx-auto bg-primary pb-4">
     <h1 class= "text-5xl text-accent py-4">Credits</h1>

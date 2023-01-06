@@ -1,8 +1,12 @@
 <script lang="ts">
-    import type { PageData } from './privacy/$types';
+    import type { PageData } from './$types';
     
     export let data: PageData;
 </script>
+
+<svelte:head>
+  <title>Watson Industries - Privacy</title>
+</svelte:head>
 
 <div class="bg-primary">
     <div class="flex flex-col mx-8 md:mx-36 lg:mx-72 xl:mx-96 text-accent pb-5">

@@ -6,6 +6,10 @@
     export let data: PageData;
 </script>
 
+<svelte:head>
+  <title>Watson Industries - About</title>
+</svelte:head>
+
 <div class="w-screen bg-primary text-accent space-y-6 py-6">
     <h1 class="text-center text-5xl font-bold font-norwester">About</h1>
     <div class="px-4">
