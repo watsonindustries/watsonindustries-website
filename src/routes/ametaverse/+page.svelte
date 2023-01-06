@@ -4,15 +4,19 @@
     import smolAmeVR from "$lib/assets/smol-ame-vr.png";
     import smolVerse from "$lib/assets/smolverse.png";
 
-    const smolVerseURL = "https://vrchat.com/home/world/wrld_99e63438-1228-4b38-a005-81f6b91ef072";
+    import {smolVerseURL} from "../../const";
     
     export let data: PageData;
 </script>
 
+<svelte:head>
+  <title>Watson Industries - Ametaverse</title>
+</svelte:head>
+
 <div class="w-screen bg-primary text-accent space-y-6 py-6">
     <h1 class="text-center text-5xl font-bold font-norwester">Ametaverse</h1>
     <img src={smolAmeVR} alt="Smol Ame VR by Walfiee" class="max-w-xs max-h-52 mx-auto" />
-    <p class="mx-5"><strong>Ametaverse</strong> sounds familiar, but is strange at the same time. The Ametaverse is a limitless world of possibility, offering endless opportunities for creativity and self-expression. Through the Ametaverse, we can experience and participate in virtual worlds that push the boundaries of what we thought was possible. It is a place where <strong>anyone can be Ame</strong>!
+    <p class="mx-5 text-lg"><strong>Ametaverse</strong> sounds familiar, but is strange at the same time. The Ametaverse is a limitless world of possibility, offering endless opportunities for creativity and self-expression. Through the Ametaverse, we can experience and participate in virtual worlds that push the boundaries of what we thought was possible. It is a place where <strong>anyone can be Ame</strong>!
     <br>
         Please watch the official announcement keynote from our CEO below.
     </p>
@@ -31,5 +35,4 @@
             Visit Now
         </a>
     </div>
-
 </div>
