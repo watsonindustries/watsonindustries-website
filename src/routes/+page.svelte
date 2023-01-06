@@ -6,9 +6,13 @@
 	import kfpLogo from "$lib/logos/kfp.png";
 	import uberSheepLogo from "$lib/logos/uber-sheep-dark.png";
 
-	import watsonRailLogo from "$lib/logos/watson-railways.png";
+	import amechibi from "$lib/assets/amechibi.png";
 	import opensourceLove from "$lib/assets/wi-loves-open-source.png";
 </script>
+
+<svelte:head>
+  <title>Watson Industries - Home</title>
+</svelte:head>
 
 <div class="flex flex-col">
 
@@ -27,7 +31,7 @@
 
 <div class="hero bg-accent py-20">
   <div class="hero-content flex-col lg:flex-row">
-    <img src={watsonRailLogo} class="max-w-screen md:max-w-sm rounded-lg shadow-2xl hover:scale-105 transform transition" alt="Watson Railways logo" />
+    <img src={amechibi} width="783" height="1280" class="max-w-screen md:max-w-sm rounded-lg shadow-2xl hover:scale-105 transform transition bg-primary p-9" alt="Watson Railways logo" />
     <div class="text-primary px-5">
       <h1 class="text-5xl font-bold font-norwester">Watson Railways</h1>
       <p class="py-6 text-lg">Experience the future of transportation with Watson Railways, a subsidiary of Watson Industries. With cutting-edge technology and a dedication to safety and efficiency, we are revolutionizing the way we travel by rail.</p>
@@ -57,7 +61,7 @@
 
 <div class="hero bg-accent py-20">
   <div class="hero-content flex-col lg:flex-row-reverse text-primary">
-    <img src={opensourceLove} class="max-w-screen md:max-w-sm rounded-lg shadow-2xl hover:scale-105 transform transition" alt="Watson Industries loves open source" />
+    <img src={opensourceLove} width="470" height="582" class="max-w-screen md:max-w-sm rounded-lg shadow-2xl hover:scale-105 transform transition" alt="Watson Industries loves open source" />
     <div>
       <h1 class="text-5xl font-bold font-norwester">Open Source</h1>
       <p class="py-6 text-lg">At Watson Industries, we believe in the power of collaboration and sharing knowledge. That's why we make our projects open source, allowing others to contribute, learn, and innovate with us.</p>
