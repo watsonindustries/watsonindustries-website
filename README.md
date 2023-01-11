@@ -1,22 +1,16 @@
-# create-svelte
+# About
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This repository contains all of the code for the Watson Industries website.
 
-## Creating a project
+The stack:
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- [SvelteKit](https://kit.svelte.dev) for the backend+frontend
+- [TailwindCSS](https://tailwindcss.com) for styling
+- [DaisyUI](https://daisyui.com) for pre-made components and markup
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install dependencies with `npm install` (or `pnpm install` or `yarn`), then start a development server:
 
 ```bash
 npm run dev
@@ -24,6 +18,14 @@ npm run dev
 # or start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
+
+### Architecture
+
+The project follows a typical SvelteKit project structure. Some important notes:
+
+- `src/lib` contains all Svelte components, as well as image assets excluding the favicon
+- `src` should contain any extra TypeScript modules
+- all `<script>` tags should be with the attribute `lang="ts"` and be written in TypeScript
 
 ## Building
 
@@ -35,4 +37,8 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+This version deploys automatically to Netlify.
+
+## Contributing
+
+Want to help contribute to the website with content, or just improvements and new stuff? Feel free to open an Issue, a PR if it is something simple and you already know what to do!
