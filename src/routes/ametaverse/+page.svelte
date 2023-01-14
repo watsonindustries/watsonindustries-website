@@ -52,7 +52,7 @@
         <img
             src={smolVerse}
             alt="Smolverse Preview"
-            class="shadow-md mx-auto hover:scale-105 transition transform max-w-2xl rounded-sm"
+            class="shadow-md mx-auto hover:scale-105 transition transform max-w-2xl w-screen rounded-sm"
         />
     </a>
     <div class="mx-auto text-center">
@@ -68,7 +68,7 @@
         <img
             src={ameMuseum}
             alt="Ame Birthday Museum Preview"
-            class="shadow-md mx-auto hover:scale-105 transition transform max-w-2xl rounded-sm"
+            class="shadow-md mx-auto hover:scale-105 transition transform max-w-2xl w-screen rounded-sm"
         />
     </a>
     <div class="mx-auto text-center">
