@@ -2,7 +2,7 @@
     import type { LayoutData } from "./$types";
     import "../app.css";
 
-    import { ameDokoURL, watsonIndustriesGithubURL } from "../const";
+    import { ameDokoURL, watsonIndustriesGithubURL, watsonIndustriesTwitterURL } from "../const";
 
     import { Github, Twitter } from "@steeze-ui/simple-icons";
     import { Icon } from "@steeze-ui/svelte-icon";
@@ -70,7 +70,7 @@
     <div class="navbar-end">
         <a
             type="button"
-            href="https://github.com/watsonindustries"
+            href={watsonIndustriesGithubURL}
             class="btn btn-ghost btn-circle"
         >
             <Icon
@@ -82,7 +82,7 @@
         </a>
         <a
             type="button"
-            href="https://twitter.com/watsonameliaEN"
+            href={watsonIndustriesTwitterURL}
             class="btn btn-ghost btn-circle"
         >
             <Icon
