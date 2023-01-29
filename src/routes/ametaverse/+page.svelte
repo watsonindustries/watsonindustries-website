@@ -31,7 +31,7 @@
         <br />
         Please watch the official announcement keynote from our CEO below.
     </p>
-    <div class="sm:mx-12 md:mx-60 xl:mx-96 mx-0 shadow-md">
+    <div class="sm:mx-12 md:mx-60 xl:mx-auto xl:max-w-screen-md mx-0 shadow-md">
         <iframe
             class="w-full h-full aspect-video"
             width="720"
