@@ -2,13 +2,15 @@
     import type { LayoutData } from "./$types";
     import "../app.css";
 
-    import { ameDokoURL, watsonIndustriesGithubURL, watsonIndustriesTwitterURL } from "../const";
+    import {
+        ameDokoURL,
+        watsonIndustriesGithubURL,
+        watsonIndustriesTwitterURL,
+    } from "../const";
 
     import { Github, Twitter } from "@steeze-ui/simple-icons";
     import { Icon } from "@steeze-ui/svelte-icon";
-    import {MetaTags} from 'svelte-meta-tags';
-
-    import watsonIndustriesLightLogo from "$lib/logos/watson-industries-landscape-light.png";
+    import { MetaTags } from "svelte-meta-tags";
 
     import Moustache from "$lib/Moustache.svelte";
 
@@ -16,20 +18,27 @@
 </script>
 
 <MetaTags
-  openGraph={{
-    type: 'website',
-    url: 'https://watsonindustries.live',
-    title: 'Watson Industries',
-    description: "Watson Industries pushes the limits of what's possible in rail, ametaverse, NFATs, Artificial Intelligence, groundpounding, and even time travel.",
-    images: [
-      {
-        url: watsonIndustriesLightLogo,
-        width: 1020,
-        height: 600,
-        alt: 'Watson Industries Light Logo'
-      }
-    ]
-  }}
+    openGraph={{
+        type: "website",
+        url: "https://watsonindustries.live",
+        title: "Watson Industries",
+        description:
+            "Watson Industries pushes the limits of what's possible in rail, ametaverse, NFATs, Artificial Intelligence, groundpounding, and even time travel.",
+        images: [
+            {
+                url: data.thumbnailImgURL,
+                width: 1020,
+                height: 600,
+                alt: "Watson Industries Light Logo",
+            },
+        ],
+    }}
+    additionalMetaTags={[
+        {
+            property: "og:image:secure_url",
+            content: data.thumbnailImgURL,
+        },
+    ]}
 />
 
 <div class="navbar bg-neutral">
