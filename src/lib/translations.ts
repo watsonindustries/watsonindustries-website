@@ -1,6 +1,16 @@
 import i18n from "sveltekit-i18n";
 import lang from "./lang/lang.json";
 
+interface TranslationsObject {
+    [langcode: string]: {lang: typeof lang},
+}
+
+const syncTranslations: TranslationsObject = {};
+
+Object.keys(lang).forEach(langcode => {
+    syncTranslations[langcode] = { lang };
+});
+
 /** @type {import("sveltekit-i18n").Config} */
 const config = ({
     loaders: [
@@ -50,15 +60,7 @@ const config = ({
             ).default,
         }
     ],
-    translations: {
-        en: lang,
-        ja: lang,
-        ko: lang,
-        nl: lang,
-        de: lang,
-        id: lang,
-        ru: lang
-    }
+    translations: syncTranslations
 });
 
 export const { t, locale, locales, loading, loadTranslations } = new i18n(config);
