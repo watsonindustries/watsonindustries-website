@@ -8,7 +8,9 @@
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "eslint ."
+		"lint": "eslint .",
+		"format": "prettier --write --plugin-search-dir=. .",
+		"formatfile": "prettier --write --plugin-search-dir=."
 	},
 	"devDependencies": {
 		"@steeze-ui/heroicons": "^2.2.1",
