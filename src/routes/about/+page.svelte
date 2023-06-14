@@ -4,18 +4,27 @@
     import watsonIndustriesLogo from "$lib/logos/watson-industries-dark.png";
 
     export let data: PageData;
+	
+	import { t } from '$lib/translations';
+	const pageTitle = $t(
+		"common.sitetitle",
+		{
+			sitename: $t("common.watsonindustries"),
+			pagename: $t("about.pagename")
+		} as any // TS moment
+	);
 </script>
 
 <svelte:head>
-  <title>Watson Industries - About</title>
+  <title>{pageTitle}</title>
 </svelte:head>
 
 <div class="w-screen bg-primary text-accent space-y-6 py-6">
-    <h1 class="text-center text-5xl font-bold font-norwester">About</h1>
+    <h1 class="text-center text-5xl font-bold font-norwester">{$t("about.header")}</h1>
     <div class="px-4">
         <img
             src={watsonIndustriesLogo}
-            alt="HoloEN Minecraft Hyperloop"
+            alt={$t("about.watsonindustrieslogo.alttext")}
             class="sm:max-w-4xl md:max-w-2xl xl:max-w-6xl max-h-80 max-w-screen mx-auto shadow-md rounded"
         />
     </div>
