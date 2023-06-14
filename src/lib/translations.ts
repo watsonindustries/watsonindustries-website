@@ -1,65 +1,47 @@
 import i18n from "sveltekit-i18n";
 import lang from "./lang/lang.json";
+import localizationIndex from "./lang/localizationIndex.json";
 
-interface TranslationsObject {
+type Locale = keyof typeof lang;
+
+type SyncTranslationsObject = {
     [langcode: string]: {lang: typeof lang},
 }
 
-const syncTranslations: TranslationsObject = {};
+type AsyncLocaleLoader = {
+    locale: Locale,
+    key: string,
+    routes?: string[],
+    loader: () => Promise<object>
+}
+
+type LocaleFileDetails = {
+    key: string,
+    routes?: string[]
+}
+
+const syncTranslations: SyncTranslationsObject = {};
+const asyncTranslations: AsyncLocaleLoader[] = [];
 
 Object.keys(lang).forEach(langcode => {
     syncTranslations[langcode] = { lang };
+    localizationIndex.forEach((localeFileDetails: LocaleFileDetails) => {
+        const { key, routes } = localeFileDetails;
+        const loader: AsyncLocaleLoader = {
+            locale: langcode as Locale,
+            key: key,
+            routes: routes,
+            loader: async () => (
+                await import(`./lang/${langcode}/${key}.json`)
+            ).default,
+        };
+        asyncTranslations.push(loader)
+    });
 });
 
 /** @type {import("sveltekit-i18n").Config} */
 const config = ({
-    loaders: [
-        {
-            locale: "en",
-            key: "common",
-            loader: async () => (
-                await import("./lang/en/common.json")
-            ).default,
-        },
-        {
-            locale: "en",
-            key: "home",
-            routes: ["/"],
-            loader: async () => (
-                await import("./lang/en/home.json")
-            ).default,
-        },
-        {
-            locale: "ja",
-            key: "common",
-            loader: async () => (
-                await import("./lang/ja/common.json")
-            ).default,
-        },
-        {
-            locale: "ja",
-            key: "home",
-            routes: ["/"],
-            loader: async () => (
-                await import("./lang/ja/home.json")
-            ).default,
-        },
-        {
-            locale: "ko",
-            key: "common",
-            loader: async () => (
-                await import("./lang/ko/common.json")
-            ).default,
-        },
-        {
-            locale: "ko",
-            key: "home",
-            routes: ["/"],
-            loader: async () => (
-                await import("./lang/ko/home.json")
-            ).default,
-        }
-    ],
+    loaders: asyncTranslations,
     translations: syncTranslations
 });
 
