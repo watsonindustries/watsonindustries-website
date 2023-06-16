@@ -1,0 +1,7 @@
+{
+    "pagename": "Privacy",
+    "header": "Privacy Policy",
+    "tagline": "We don't want or need your cookies.",
+    "cookieimage.alttext": "Cookies from Irasutoya",
+    "description": "We only use [Plausible Analytics](https://plausible.io/) for statistics purposes and do not use any cookies or collect personal information.\n\nYou can read more about how Plausible collects analytics [on their official website](https://plausible.io/data-policy).\n\nHowever, pages that include iframes like YouTube embeds may use additional trackers. By visiting these pages you agree to [YouTube's privacy policy](https://support.google.com/youtube/answer/10364219)."
+}

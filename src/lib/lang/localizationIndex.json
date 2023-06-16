@@ -9,5 +9,9 @@
     {
         "key": "about",
         "routes": ["/about"]
+    },
+    {
+        "key": "privacy",
+        "routes": ["/privacy"]
     }
 ]
