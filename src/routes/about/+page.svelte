@@ -4,10 +4,10 @@
     import watsonIndustriesLogo from "$lib/logos/watson-industries-dark.png";
 
     export let data: PageData;
-	
-	import { t } from "$lib/translations";
-  import PageTitle from "$lib/PageTitle.svelte";
-  import { parse } from "marked";
+
+    import { t } from "$lib/translations";
+    import PageTitle from "$lib/PageTitle.svelte";
+    import { parse } from "marked";
 </script>
 
 <PageTitle key="about.pagename" />
