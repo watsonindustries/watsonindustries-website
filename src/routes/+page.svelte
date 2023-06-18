@@ -9,19 +9,11 @@
 	import amechibi from "$lib/assets/amechibi.png";
 	import opensourceLove from "$lib/assets/wi-loves-open-source.png";
 	
-	import { t } from '$lib/translations';
-	const pageTitle = $t(
-		"common.sitetitle",
-		{
-			sitename: $t("common.watsonindustries"),
-			pagename: $t("home.pagename")
-		} as any // TS moment
-	);
+	import { t } from "$lib/translations";
+	import PageTitle from "$lib/PageTitle.svelte";
 </script>
 
-<svelte:head>
-	<title>{pageTitle}</title>
-</svelte:head>
+<PageTitle key="home.pagename" />
 
 <div class="flex flex-col">
 	<div class="hero bg-primary py-20">

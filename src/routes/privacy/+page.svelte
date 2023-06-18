@@ -3,21 +3,12 @@
     
     export let data: PageData;
 	
-	import { t } from '$lib/translations';
-	const pageTitle = $t(
-		"common.sitetitle",
-		{
-			sitename: $t("common.watsonindustries"),
-			pagename: $t("privacy.pagename")
-		} as any // TS moment
-	);
-
+	import { t } from "$lib/translations";
+  import PageTitle from "$lib/PageTitle.svelte";
   import { parse } from "marked";
 </script>
 
-<svelte:head>
-  <title>{pageTitle}</title>
-</svelte:head>
+<PageTitle key="privacy.pagename" />
 
 <div class="bg-primary">
     <div class="flex flex-col mx-8 md:mx-36 lg:mx-72 xl:mx-96 text-accent pb-5">
