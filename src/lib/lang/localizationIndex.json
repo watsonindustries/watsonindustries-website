@@ -3,6 +3,9 @@
         "key": "common"
     },
     {
+        "key": "layout"
+    },
+    {
         "key": "home",
         "routes": ["/"]
     },

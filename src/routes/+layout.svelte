@@ -15,6 +15,8 @@
     import Moustache from "$lib/Moustache.svelte";
 
     export let data: LayoutData;
+
+    import { t } from "$lib/translations";
 </script>
 
 <MetaTags
@@ -63,11 +65,11 @@
                 tabindex="0"
                 class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
-                <li><a href="/">Homepage</a></li>
-                <li><a href="/rail">Rail</a></li>
-                <li><a href="/ametaverse">Ametaverse</a></li>
-                <li><a href={ameDokoURL}>AmeDoko App</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="/">{$t("layout.header.menu.home")}</a></li>
+                <li><a href="/rail">{$t("layout.header.menu.watsonrailways")}</a></li>
+                <li><a href="/ametaverse">{$t("layout.header.menu.ametaverse")}</a></li>
+                <li><a href={ameDokoURL}>{$t("layout.header.menu.amedoko")}</a></li>
+                <li><a href="/about">{$t("layout.header.menu.about")}</a></li>
             </ul>
         </div>
     </div>
@@ -108,22 +110,23 @@
 
 <footer class="footer p-10 bg-neutral text-neutral-content">
     <div>
-        <span class="footer-title">Services</span>
-        <a class="link link-hover" href="/rail">Rail</a>
-        <a class="link link-hover" href="/ametaverse">Ametaverse</a>
+        <span class="footer-title">{$t("layout.footer.services.header")}</span>
+        <a class="link link-hover" href="/rail">{$t("layout.footer.services.watsonrailways")}</a>
+        <a class="link link-hover" href="/ametaverse">{$t("layout.footer.services.ametaverse")}</a>
+        <a class="link link-hover" href={ameDokoURL}>{$t("layout.footer.services.amedoko")}</a>
         <!-- <a class="link link-hover" href="/construction" >Construction</a> -->
         <!-- <a class="link link-hover" href="/nfat" >NFATs</a> -->
         <!-- <a class="link link-hover" href="/ai" >AI</a> -->
-        <a class="link link-hover" href={watsonIndustriesGithubURL}>Apps</a>
     </div>
     <div>
-        <span class="footer-title">Company</span>
-        <a class="link link-hover" href="/about">About</a>
+        <span class="footer-title">{$t("layout.footer.company.header")}</span>
+        <a class="link link-hover" href="/about">{$t("layout.footer.company.about")}</a>
         <!-- <a class="link link-hover" href="/contact" >Contact</a> -->
-        <a class="link link-hover" href="/credits">Credits</a>
+        <a class="link link-hover" href="/credits">{$t("layout.footer.company.credits")}</a>
+        <a class="link link-hover" href={watsonIndustriesGithubURL}>{$t("layout.footer.company.github")}</a>
     </div>
     <div>
-        <span class="footer-title">Legal</span>
-        <a class="link link-hover" href="/privacy">Privacy & Cookie policy</a>
+        <span class="footer-title">{$t("layout.footer.legal.header")}</span>
+        <a class="link link-hover" href="/privacy">{$t("layout.footer.legal.privacy")}</a>
     </div>
 </footer>
