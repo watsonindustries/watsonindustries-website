@@ -1,17 +1,25 @@
 {
     "pagename": "Home",
-    "watsonindustries.description": "Innovation knows no bounds at Watson Industries, where we push the limits of what's possible in rail, ametaverse, NFATs, Artificial Intelligence, groundpounding, and even time travel. Join us on the cutting edge of progress.",
-    "watsonindustries.joinbutton.label": "Join Us",
-    "watsonrailways.header": "Watson Railways",
-    "watsonrailways.description": "Experience the future of transportation with Watson Railways, a subsidiary of Watson Industries. With cutting-edge technology and a dedication to safety and efficiency, we are revolutionizing the way we travel by rail.",
-    "watsonrailways.logo.alttext": "Watson Railways logo",
-    "partners.header": "Our Partners",
-    "partners.description": "We would be nothing without our amazing partners, who supply us with nutrition and energy to keep pounding those grounds.",
-    "partners.takoeats.logo.alttext": "Tako Eats logo",
-    "partners.ubersheep.logo.alttext": "Uber Sheep logo by totangtotan",
-    "partners.kfp.logo.alttext": "KFP logo with black background",
-    "opensource.image.alttext": "Watson Industries loves open source",
-    "opensource.header": "Open Source",
-    "opensource.description": "At Watson Industries, we believe in the power of collaboration and sharing knowledge. That's why we make our projects open source, allowing others to contribute, learn, and innovate with us.",
-    "opensource.browsebutton.label": "Browse Projects"
+    "watsonindustries": {
+        "description": "Innovation knows no bounds at Watson Industries, where we push the limits of what's possible in rail, ametaverse, NFATs, Artificial Intelligence, groundpounding, and even time travel. Join us on the cutting edge of progress.",
+        "joinbutton.label": "Join Us"
+    },
+    "watsonrailways": {
+        "header": "Watson Railways",
+        "description": "Experience the future of transportation with Watson Railways, a subsidiary of Watson Industries. With cutting-edge technology and a dedication to safety and efficiency, we are revolutionizing the way we travel by rail.",
+        "logo.alttext": "Watson Railways logo"
+    },
+    "partners": {
+        "header": "Our Partners",
+        "description": "We would be nothing without our amazing partners, who supply us with nutrition and energy to keep pounding those grounds.",
+        "takoeats.logo.alttext": "Tako Eats logo",
+        "ubersheep.logo.alttext": "Uber Sheep logo by totangtotan",
+        "kfp.logo.alttext": "KFP logo with black background"
+    },
+    "opensource": {
+        "image.alttext": "Watson Industries loves open source",
+        "header": "Open Source",
+        "description": "At Watson Industries, we believe in the power of collaboration and sharing knowledge. That's why we make our projects open source, allowing others to contribute, learn, and innovate with us.",
+        "browsebutton.label": "Browse Projects"
+    }
 }
