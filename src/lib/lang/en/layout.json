@@ -1,0 +1,27 @@
+{
+    "header.menu": {
+        "home": "Homepage",
+        "watsonrailways": "Watson Railways",
+        "ametaverse": "Ametaverse",
+        "amedoko": "AmeDoko App",
+        "about": "About"
+    },
+    "footer": {
+        "services": {
+            "header": "Services",
+            "watsonrailways": "Watson Railways",
+            "ametaverse": "Ametaverse",
+            "amedoko": "AmeDoko"
+        },
+        "company": {
+            "header": "Company",
+            "about": "About",
+            "credits": "Credits",
+            "github": "GitHub"
+        },
+        "legal": {
+            "header": "Legal",
+            "privacy": "Privacy & Cookie policy"
+        }
+    }
+}

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import {watsonIndustriesGithubURL} from '../const';
 	import PartnerLogo from '$lib/PartnerLogo.svelte';
 
@@ -8,21 +8,21 @@
 
 	import amechibi from "$lib/assets/amechibi.png";
 	import opensourceLove from "$lib/assets/wi-loves-open-source.png";
+	
+	import { t } from "$lib/translations";
+	import PageTitle from "$lib/PageTitle.svelte";
 </script>
 
-<svelte:head>
-  <title>Watson Industries - Home</title>
-</svelte:head>
+<PageTitle key="home.pagename" />
 
 <div class="flex flex-col">
-
 	<div class="hero bg-primary py-20">
 		<div class="hero-content text-center text-accent">
 			<div class="max-w-md mx-auto">
-				<h1 class="text-5xl font-bold font-norwester my-3">Watson Industries</h1>
-				<p class="py-6 text-lg">Innovation knows no bounds at Watson Industries, where we push the limits of what's possible in rail, ametaverse, NFATs, Artificial Intelligence, groundpounding, and even time travel. Join us on the cutting edge of progress.</p>
+				<h1 class="text-5xl font-bold font-norwester my-3">{$t("common.watsonindustries")}</h1>
+				<p class="py-6 text-lg">{$t("home.watsonindustries.description")}</p>
 				<span class="text-center">
-					<a type="button" class="btn btn-secondary" href="https://github.com/watsonindustries">Join Us</a>
+					<a type="button" class="btn btn-secondary" href="https://github.com/watsonindustries">{$t("home.watsonindustries.joinbutton.label")}</a>
 				</span>
 			</div>
 		</div>
@@ -31,11 +31,11 @@
 
 <div class="hero bg-accent py-20">
   <div class="hero-content flex-col lg:flex-row">
-    <img src={amechibi} width="783" class="max-w-screen sm:max-w-xs md:max-w-sm rounded-lg shadow-2xl hover:scale-105 transform transition bg-primary p-9" alt="Watson Railways logo" />
+    <img src={amechibi} width="783" class="max-w-screen sm:max-w-xs md:max-w-sm rounded-lg shadow-2xl hover:scale-105 transform transition bg-primary p-9" alt={$t("home.watsonrailways.logo.alttext")} />
     <div class="text-primary px-5">
-      <h1 class="text-5xl font-bold font-norwester">Watson Railways</h1>
-      <p class="py-6 text-lg">Experience the future of transportation with Watson Railways, a subsidiary of Watson Industries. With cutting-edge technology and a dedication to safety and efficiency, we are revolutionizing the way we travel by rail.</p>
-      <a type="button" class="btn btn-primary" href="/rail">Learn more</a>
+      <h1 class="text-5xl font-bold font-norwester">{$t("home.watsonrailways.header")}</h1>
+      <p class="py-6 text-lg">{$t("home.watsonrailways.description")}</p>
+      <a type="button" class="btn btn-primary" href="/rail">{$t("common.learnmore")}</a>
     </div>
   </div>
 </div>
@@ -45,14 +45,14 @@
 
     <div>
 			<div class="mx-auto">
-				<h1 class="text-5xl font-bold font-norwester">Our Partners</h1>
-				<p class="py-6 text-lg">We would be nothing without our amazing partners, who supply us with nutrition and energy to keep pounding those grounds.</p>
+				<h1 class="text-5xl font-bold font-norwester">{$t("home.partners.header")}</h1>
+				<p class="py-6 text-lg">{$t("home.partners.description")}</p>
 			</div>
       
 			<div class="flex md:flex-row flex-col sm:space-x-6 xs:space-y-7">
-				<PartnerLogo url="https://youtu.be/wSmNK842gs8?t=961" logo={takoEatsLogo} alt="Tako Eats logo" />
-				<PartnerLogo url="https://uber-sheep.com" alt="Uber Sheep logo by totangtotan" logo={uberSheepLogo} />
-				<PartnerLogo url="https://vivalakiara.com" alt="KFP logo with black background" logo={kfpLogo} />
+				<PartnerLogo url="https://youtu.be/wSmNK842gs8?t=961" alt={$t("home.partners.takoeats.logo.alttext")} logo={takoEatsLogo} />
+				<PartnerLogo url="https://uber-sheep.com" alt={$t("home.partners.ubersheep.logo.alttext")} logo={uberSheepLogo} />
+				<PartnerLogo url="https://vivalakiara.com" alt={$t("home.partners.kfp.logo.alttext")} logo={kfpLogo} />
 			</div>	
     </div>
 
@@ -61,11 +61,11 @@
 
 <div class="hero bg-accent py-20">
   <div class="hero-content flex-col lg:flex-row-reverse text-primary">
-    <img src={opensourceLove} width="470" height="582" class="max-w-screen md:max-w-sm rounded-lg shadow-2xl hover:scale-105 transform transition" alt="Watson Industries loves open source" />
+    <img src={opensourceLove} width="470" height="582" class="max-w-screen md:max-w-sm rounded-lg shadow-2xl hover:scale-105 transform transition" alt={$t("home.opensource.image.alttext")} />
     <div>
-      <h1 class="text-5xl font-bold font-norwester">Open Source</h1>
-      <p class="py-6 text-lg">At Watson Industries, we believe in the power of collaboration and sharing knowledge. That's why we make our projects open source, allowing others to contribute, learn, and innovate with us.</p>
-      <a type="button" class="btn btn-primary" href={watsonIndustriesGithubURL}>Browse Projects</a>
+      <h1 class="text-5xl font-bold font-norwester">{$t("home.opensource.header")}</h1>
+      <p class="py-6 text-lg">{$t("home.opensource.description")}</p>
+      <a type="button" class="btn btn-primary" href={watsonIndustriesGithubURL}>{$t("home.opensource.browsebutton.label")}</a>
     </div>
   </div>
 </div>

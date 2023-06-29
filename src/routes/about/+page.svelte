@@ -4,57 +4,32 @@
     import watsonIndustriesLogo from "$lib/logos/watson-industries-dark.png";
 
     export let data: PageData;
+
+    import { t } from "$lib/translations";
+    import PageTitle from "$lib/PageTitle.svelte";
+    import { parse } from "marked";
 </script>
 
-<svelte:head>
-  <title>Watson Industries - About</title>
-</svelte:head>
+<PageTitle key="about.pagename" />
 
 <div class="w-screen bg-primary text-accent space-y-6 py-6">
-    <h1 class="text-center text-5xl font-bold font-norwester">About</h1>
+    <h1 class="text-center text-5xl font-bold font-norwester">{$t("about.header")}</h1>
     <div class="px-4">
         <img
             src={watsonIndustriesLogo}
-            alt="HoloEN Minecraft Hyperloop"
+            alt={$t("about.watsonindustrieslogo.alttext")}
             class="sm:max-w-4xl md:max-w-2xl xl:max-w-6xl max-h-80 max-w-screen mx-auto shadow-md rounded"
         />
     </div>
 
-    <div class="mx-8 sm:mx-80 md:mx-32 text-xl">
-        <p>
-            <br />
-            Watson Industries was founded on
-            <strong>Amelia's Birthday, January 6th</strong>, and is the
-            embodiment of the best parts of Ame and TeaMates and Investigators:
-        </p>
-        <ul class="list-disc px-6 my-4">
-            <li>creativity</li>
-            <li>talent</li>
-            <li>innovation</li>
-            <li>humor</li>
-        </ul>
-        <p>
-            The website is a living, non-profit open source project and is open
-            to contributions.
-        </p>
-        <br />
-        WatsonIndustries.live is a fan project dedicated to
-        <a
-            href="https://hololive.hololivepro.com/en/talents/watson-amelia/"
-            class="underline">Amelia Watson</a
-        >
-        of HololiveEN and is not associated with Cover Corp or Hololive Productions
-        in any way. The project falls under the
-        <a href="https://en.hololive.tv/terms" class="underline"
-            >Fan Work Guidelines</a
-        >.
+    <div class="mx-8 sm:mx-80 md:mx-32 text-xl [&>ul]:list-disc [&>ul]:px-6 [&>ul]:my-4 [&>p>a]:underline">
+        {@html parse($t("about.description"))}
     </div>
 
     <h2 class="text-center text-4xl font-bold font-norwester">
-        Want your content featured here?
+        {$t("about.featured.header")}
     </h2>
-    <p class="text-center mx-8 text-xl">
-        A process will come soon, for now you can simply DM @DaniruKun on
-        Twitter.
+    <p class="text-center mx-8 text-xl [&>p>a]:underline">
+        {@html parse($t("about.featured.description"))}
     </p>
 </div>

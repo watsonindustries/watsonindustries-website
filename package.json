@@ -38,6 +38,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"daisyui": "^2.46.0"
+		"daisyui": "^2.46.0",
+		"marked": "^5.1.0",
+		"sveltekit-i18n": "^2.2.2"
 	}
 }
